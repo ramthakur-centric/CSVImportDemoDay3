@@ -29,14 +29,14 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if(app.Environment.IsDevelopment())
 {
-	app.UseSwagger();       	app.UseSwaggerUI()   ;
+	app.UseSwagger();app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection();
-// app.UseAuthorization();
-app.MapControllers();   app.Run()  ;
+//app.UseHttpsRedirection();
+//app.UseAuthorization();
+app.MapControllers();app.Run();
 
 // Install dotnet-ef tool
 // dotnet tool install --global dotnet-ef
